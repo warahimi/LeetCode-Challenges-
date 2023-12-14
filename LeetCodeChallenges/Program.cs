@@ -22,6 +22,8 @@ namespace LeetCodeChallenges
                 Console.Write("]");
             }
             Console.Write("]");
+            Console.WriteLine();
+            Console.WriteLine(ob.sortString("zxwqravbctyuiosdfghj"));
         }
     }
 }

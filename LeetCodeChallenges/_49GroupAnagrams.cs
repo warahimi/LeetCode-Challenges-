@@ -62,6 +62,12 @@ namespace LeetCodeChallenges
 
             return sb.ToString();
         }
+        public string sortString(string str)
+        {
+            char[] chars = str.ToCharArray();
+            Array.Sort(chars);
+            return new string(chars);
+        }
 
     }
 }
