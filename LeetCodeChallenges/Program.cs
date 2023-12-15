@@ -7,23 +7,43 @@ namespace LeetCodeChallenges
     {
         static void Main(string[] args)
         {
-            _49GroupAnagrams ob = new _49GroupAnagrams();
 
-            IList<IList<string>> anwser = ob.GroupAnagrams(["eat", "tea", "tan", "ate", "nat", "bat","a"]);
-
-            Console.Write("[");
-            foreach (var list  in anwser) 
+            // Sorting Dictionary Elements 
+            Dictionary<int, int> d = new Dictionary<int, int>
             {
-                Console.Write("[");
-                foreach (var str in list)
-                {
-                    Console.Write('"' + str + '"' + ",");
-                }
-                Console.Write("]");
+                {1, 5},
+                {2, 3},
+                {3, 1},
+                {4, 4},
+                {5, 2}
+            };
+
+            // Sort by values in ascending order
+            var sortedAscending = d.OrderBy(pair => pair.Value);
+
+            // Sort by values in descending order
+            var sortedDescending = d.OrderByDescending(pair => pair.Value);
+
+            Console.WriteLine("Ascending order:");
+            foreach (var kvp in sortedAscending)
+            {
+                Console.WriteLine($"Key: {kvp.Key}, Value: {kvp.Value}");
             }
-            Console.Write("]");
-            Console.WriteLine();
-            Console.WriteLine(ob.sortString("zxwqravbctyuiosdfghj"));
+
+            Console.WriteLine("\nDescending order:");
+            foreach (var kvp in sortedDescending)
+            {
+                Console.WriteLine($"Key: {kvp.Key}, Value: {kvp.Value}");
+            }
+
+            // Take the top 3 elements
+            var top3Elements = sortedDescending.Take(3);
+
+            Console.WriteLine("Top 3 elements in descending order:");
+            foreach (var kvp in top3Elements)
+            {
+                Console.WriteLine($"Key: {kvp.Key}, Value: {kvp.Value}");
+            }
         }
     }
 }
