@@ -46,25 +46,31 @@ namespace LeetCodeChallenges
             //}
 
 
-            Dictionary<int, int> d = new Dictionary<int, int>();
-            int[] nums = { 6, 5, 5 };
-            foreach (int num in nums)
-            {
-                if (d.ContainsKey(num))
-                {
-                    d[num]++;
-                }
-                else
-                {
-                    d[num] = 1;
-                }
-            }
-            // Find the key with the largest value
-            int keyWithLargestValue = d.OrderByDescending(pair => pair.Value)
-                                   .First()
-                                   .Key;
+            //Dictionary<int, int> d = new Dictionary<int, int>();
+            //int[] nums = { 6, 5, 5 };
+            //foreach (int num in nums)
+            //{
+            //    if (d.ContainsKey(num))
+            //    {
+            //        d[num]++;
+            //    }
+            //    else
+            //    {
+            //        d[num] = 1;
+            //    }
+            //}
+            //// Find the key with the largest value
+            //int keyWithLargestValue = d.OrderByDescending(pair => pair.Value)
+            //                       .First()
+            //                       .Key;
 
-            Console.WriteLine("Key with the largest value: " + keyWithLargestValue);
+            //Console.WriteLine("Key with the largest value: " + keyWithLargestValue);
+
+            Kadane_Algorithm_MaxSubArraySum k = new Kadane_Algorithm_MaxSubArraySum();
+            int[] arr = { -2, -5, 6,-2,-3,1,5,-6};
+            Console.WriteLine(k.MaxSubArraySum(arr));
+            Console.WriteLine(k.MaxSubArrayBruteForce(arr));
+            Console.WriteLine(k.MaxSubArray2(arr));
         }
     }
 }
