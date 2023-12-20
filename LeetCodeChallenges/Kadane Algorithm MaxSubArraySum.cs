@@ -33,7 +33,8 @@ namespace LeetCodeChallenges
         public int MaxSubArraySum(int[] arr)
         {
             int size = arr.Length;
-            int maxSoFar = int.MinValue, maxEndingHere = 0;
+            int maxSoFar = int.MinValue;
+            int maxEndingHere = 0;
 
             for (int i = 0; i < size; i++)
             {

@@ -66,11 +66,13 @@ namespace LeetCodeChallenges
 
             //Console.WriteLine("Key with the largest value: " + keyWithLargestValue);
 
-            Kadane_Algorithm_MaxSubArraySum k = new Kadane_Algorithm_MaxSubArraySum();
-            int[] arr = { -2, -5, 6,-2,-3,1,5,-6};
-            Console.WriteLine(k.MaxSubArraySum(arr));
-            Console.WriteLine(k.MaxSubArrayBruteForce(arr));
-            Console.WriteLine(k.MaxSubArray2(arr));
+            //Kadane_Algorithm_MaxSubArraySum k = new Kadane_Algorithm_MaxSubArraySum();
+            //int[] arr = { -2, -5, 6,-2,-3,1,5,-6};
+            //Console.WriteLine(k.MaxSubArraySum(arr));
+            //Console.WriteLine(k.MaxSubArrayBruteForce(arr));
+            //Console.WriteLine(k.MaxSubArray2(arr));
+            float x = 4 / 3;
+            Console.WriteLine(x);
         }
     }
 }
