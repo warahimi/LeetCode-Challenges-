@@ -71,8 +71,13 @@ namespace LeetCodeChallenges
             //Console.WriteLine(k.MaxSubArraySum(arr));
             //Console.WriteLine(k.MaxSubArrayBruteForce(arr));
             //Console.WriteLine(k.MaxSubArray2(arr));
-            float x = 4 / 3;
-            Console.WriteLine(x);
+
+            _152Maximum_Product_Subarray c = new _152Maximum_Product_Subarray();
+            int[] arr = { 3, 4, 5, 6, 1, 2 };
+
+            Console.WriteLine(c.MaxProduct(arr));
+            Console.WriteLine(c.MaxProduct2(arr));
+            Console.WriteLine(c.MaxProduct3(arr));
         }
     }
 }

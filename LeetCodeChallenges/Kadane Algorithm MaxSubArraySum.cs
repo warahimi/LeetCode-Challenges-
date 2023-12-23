@@ -85,5 +85,20 @@ namespace LeetCodeChallenges
 
             return maxSum;
         }
+
+        public int MaxProduct(int[] nums)
+        {
+            int largestProduct = nums[0];
+            int rightProduct = 1;
+            int leftProduct = 1;
+            for (int i = 0; i < nums.Length; i++)
+            {
+                // reset to 1 when the product becomes zero
+                rightProduct = (rightProduct == 0 ? 1 : rightProduct) * nums[i];
+                leftProduct = (leftProduct == 0 ? 1 : leftProduct) * nums[nums.Length - 1 - i];
+                largestProduct = Math.Max(largestProduct, Math.Max(leftProduct, rightProduct));
+            }
+            return largestProduct;
+        }
     }
 }
