@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DynamicProgramming")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+92aceabfeeb9b086f8c5fb88aa3e24099e2c868b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("DynamicProgramming")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DynamicProgramming")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
