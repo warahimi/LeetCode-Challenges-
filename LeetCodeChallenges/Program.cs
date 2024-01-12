@@ -72,12 +72,40 @@ namespace LeetCodeChallenges
             //Console.WriteLine(k.MaxSubArrayBruteForce(arr));
             //Console.WriteLine(k.MaxSubArray2(arr));
 
-            _152Maximum_Product_Subarray c = new _152Maximum_Product_Subarray();
-            int[] arr = { 3, 4, 5, 6, 1, 2 };
+            //_152Maximum_Product_Subarray c = new _152Maximum_Product_Subarray();
+            //int[] arr = { 3, 4, 5, 6, 1, 2 };
 
-            Console.WriteLine(c.MaxProduct(arr));
-            Console.WriteLine(c.MaxProduct2(arr));
-            Console.WriteLine(c.MaxProduct3(arr));
+            //Console.WriteLine(c.MaxProduct(arr));
+            //Console.WriteLine(c.MaxProduct2(arr));
+            //Console.WriteLine(c.MaxProduct3(arr));
+
+            //_238_Product_of_Array_Except_Self o = new _238_Product_of_Array_Except_Self();
+            //int[] arr = { 1, 2, 3, 4 };
+            //print(o.ProductExceptSelf(arr));
+            //print(o.ProductExceptSelf2(arr));
+            //print(o.ProductExceptSelf3(arr));
+            //print(o.ProductExceptSelf4(arr));
+
+            Encode_and_Decode_Strings___Leetcode_271 o = new Encode_and_Decode_Strings___Leetcode_271();
+            string[] sl = { "wahid", "rahimi", "Abdullah", "Hosna" };
+            foreach (string s in o.EncodeDecode(sl))
+            {
+                Console.Write(s + " ");
+            }
+            Console.WriteLine();
+            foreach (string s in o.EncodeDecode2(sl))
+            {
+                Console.Write(s + " ");
+            }
+
+        }
+        public static void print(int[] arr)
+        {
+            foreach (int i in arr)
+            {
+                Console.Write(i + " ");
+            }
+            Console.WriteLine();
         }
     }
 }

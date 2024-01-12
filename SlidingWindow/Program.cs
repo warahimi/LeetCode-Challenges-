@@ -129,13 +129,38 @@ namespace SlidingWindow
             //Console.WriteLine(o.totalSubArrays2(arr,k));
             //Console.WriteLine(o.SubarraySum(arr,k));
 
-            Longest_Substring_With_K_Unique_Characters_Variable_Size_Sliding_Window o = new Longest_Substring_With_K_Unique_Characters_Variable_Size_Sliding_Window();
-            string S = "aabacbebebe";
-            int K = 3;
-            Console.WriteLine(o.longestKSubstr(S,K));
-            Console.WriteLine(o.longestKSubstr2(S,K));
-            Console.WriteLine(o.longestSubStr(S,K));
-            Console.WriteLine(o.longestSubStr2(S,K));
+            //Longest_Substring_With_K_Unique_Characters_Variable_Size_Sliding_Window o = new Longest_Substring_With_K_Unique_Characters_Variable_Size_Sliding_Window();
+            //string S = "aabacbebebe";
+            //int K = 3;
+            //Console.WriteLine(o.longestKSubstr(S,K));
+            //Console.WriteLine(o.longestKSubstr2(S,K));
+            //Console.WriteLine(o.longestSubStr(S,K));
+            //Console.WriteLine(o.longestSubStr2(S,K));
+
+
+            //_3Longest_Substring_Without_Repeating_Characters o = new _3Longest_Substring_Without_Repeating_Characters();
+            //string s = "pwwkew";
+            //Console.WriteLine(o.LengthOfLongestSubstring(s));
+
+            //Pick_Toys_An_Interesting_Sliding_Window_Problem obj = new Pick_Toys_An_Interesting_Sliding_Window_Problem();
+            //string s = "baabbacefgdfgsdgsdgdg";
+            //Console.WriteLine(obj.maxNumberOfToys(s));
+            //Console.WriteLine(obj.maxNumberOfCharOfTwoTypes(s));
+
+            Practice p = new Practice();
+            p.insert(2);
+            p.insert(3);
+            p.insert(3);
+            p.insert(4);
+            p.insert(5);
+            p.insert(6);
+            p.insert(7);
+            p.remove(4);
+            p.remove(40);
+            p.print();
+
+            Console.WriteLine();
+            Console.WriteLine(p.getData());
         }
 
         public static bool AreDictionariesEqual(Dictionary<char,int> dict1, Dictionary<char,int> dict2)

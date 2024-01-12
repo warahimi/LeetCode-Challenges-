@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SlidingWindow")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a2ad26cf019514699abded042e79fa8b7eda6476")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c670595137aa89514b35a904d4923bf7ac329277")]
 [assembly: System.Reflection.AssemblyProductAttribute("SlidingWindow")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SlidingWindow")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
