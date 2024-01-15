@@ -10,31 +10,47 @@ namespace LeetCodeChallenges
     {
         public IList<IList<int>> ThreeSum(int[] nums)
         {
-            IList<IList<int>> res = new List<IList<int>>();
             int n = nums.Length;
-            Array.Sort(nums);
-            for (int i = 0; i < n; i++)
+            Array.Sort(nums); // Sort the array - O(n log n)
+            // we sort the array to detect the duplicates by them self 
+            HashSet<string> set = new HashSet<string>(); // To store unique triplets as strings
+            List<IList<int>> result = new List<IList<int>>(); // Final result list
+
+            for (int i = 0; i < n - 2; i++)
             {
-                if (i > 0 && nums[i - 1] == nums[i])
-                    continue;
-                for (int j = i + 1; j < n; j++)
+                // Skip duplicate elements to avoid duplicate triplets
+                if (i > 0 && nums[i] == nums[i - 1]) continue;
+
+                int left = i + 1;
+                int right = n - 1;
+                while (left < right)
                 {
-                    for (int k = j + 1; k < n; k++)
+                    int sum = nums[i] + nums[left] + nums[right];
+                    if (sum == 0)
                     {
-                        if (nums[i] + nums[j] + nums[k] == 0)
+                        // Convert triplet to a string for unique checking
+                        string triplet = $"{nums[i]},{nums[left]},{nums[right]}";
+                        if (!set.Contains(triplet))
                         {
-                            List<int> list = new List<int>();
-                            list.Add(nums[i]);
-                            list.Add(nums[j]);
-                            list.Add(nums[k]);
-                            if (!res.Contains(list))
-                                res.Add(list);
+                            set.Add(triplet);
+                            result.Add(new List<int> { nums[i], nums[left], nums[right] });
                         }
+                        left++;
+                        right--;
+                    }
+                    else if (sum < 0)
+                    {
+                        left++;
+                    }
+                    else
+                    {
+                        right--;
                     }
                 }
             }
-            return res;
+            return result; // Return the final list of triplets
         }
+
         /*
          Complexity Analysis:
             Time Complexity:

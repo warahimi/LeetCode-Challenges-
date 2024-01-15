@@ -71,5 +71,54 @@ namespace LeetCodeChallenges
             }
             return profit;
         }
+        // optimal using two pointer and sliding window alg 
+        public int MaxProfit33(int[] prices)
+        {
+            int left = 0;
+            int right = 1;
+            int maxProfit = 0;
+
+            while (right < prices.Length)
+            {
+                // is it a profitable transaction ?
+                if (prices[right] - prices[left] > 0)
+                {
+                    int profit = prices[right] - prices[left];
+                    maxProfit = Math.Max(maxProfit, profit);
+                }
+                else
+                {
+                    // we found a lower price at right pointer we shift our left pointer 
+                    // all the way to the right 
+                    // left = buy, right = sell 
+                    left = right;
+                }
+                right++;
+            }
+            return maxProfit;
+        }
+        public int MaxProfit4(int[] prices)
+        {
+            int buy = 0, 
+                profit = 0, 
+                maxProfit = 0, 
+                sell = 1;
+
+            while (sell < prices.Length)
+            {
+                profit = prices[sell] - prices[buy];
+                if (profit <= 0)
+                {
+                    buy = sell;
+                }
+                else
+                {
+                    if (profit > maxProfit) 
+                        maxProfit = profit;
+                }
+                sell++;
+            }
+            return maxProfit;
+        }
     }
 }

@@ -86,18 +86,33 @@ namespace LeetCodeChallenges
             //print(o.ProductExceptSelf3(arr));
             //print(o.ProductExceptSelf4(arr));
 
-            Encode_and_Decode_Strings___Leetcode_271 o = new Encode_and_Decode_Strings___Leetcode_271();
-            string[] sl = { "wahid", "rahimi", "Abdullah", "Hosna" };
-            foreach (string s in o.EncodeDecode(sl))
-            {
-                Console.Write(s + " ");
-            }
-            Console.WriteLine();
-            foreach (string s in o.EncodeDecode2(sl))
-            {
-                Console.Write(s + " ");
-            }
+            //Encode_and_Decode_Strings___Leetcode_271 o = new Encode_and_Decode_Strings___Leetcode_271();
+            //string[] sl = { "wahid", "rahimi", "Abdullah", "Hosna" };
+            //foreach (string s in o.EncodeDecode(sl))
+            //{
+            //    Console.Write(s + " ");
+            //}
+            //Console.WriteLine();
+            //foreach (string s in o.EncodeDecode2(sl))
+            //{
+            //    Console.Write(s + " ");
+            //}
 
+            //Console.WriteLine(Math.Min(3,3));
+
+            Merge_two_sorted_array o = new Merge_two_sorted_array();
+            _4_Median_of_Two_Sorted_Arrays o2 = new _4_Median_of_Two_Sorted_Arrays();
+            int[] arr1 = { 1,2,3,9,10,11,12,13};
+            int[] arr2 = { 3, 4 ,5,6,7,100,111,123};
+            int[] arr3 = o.merge(arr1, arr2 );
+
+            Console.WriteLine(o2.FindMedianSortedArrays(arr1, arr2));
+            Console.WriteLine(o2.FindMedianSortedArrays2(arr1, arr2));
+
+            //foreach ( int i in arr3 )
+            //{
+            //    Console.Write(i + " ");
+            //}
         }
         public static void print(int[] arr)
         {
