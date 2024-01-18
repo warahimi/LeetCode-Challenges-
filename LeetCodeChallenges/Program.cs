@@ -100,19 +100,58 @@ namespace LeetCodeChallenges
 
             //Console.WriteLine(Math.Min(3,3));
 
-            Merge_two_sorted_array o = new Merge_two_sorted_array();
-            _4_Median_of_Two_Sorted_Arrays o2 = new _4_Median_of_Two_Sorted_Arrays();
-            int[] arr1 = { 1,2,3,9,10,11,12,13};
-            int[] arr2 = { 3, 4 ,5,6,7,100,111,123};
-            int[] arr3 = o.merge(arr1, arr2 );
+            //Merge_two_sorted_array o = new Merge_two_sorted_array();
+            //_4_Median_of_Two_Sorted_Arrays o2 = new _4_Median_of_Two_Sorted_Arrays();
+            //int[] arr1 = { 1,2,3,9,10,11,12,13};
+            //int[] arr2 = { 3, 4 ,5,6,7,100,111,123};
+            //int[] arr3 = o.merge(arr1, arr2 );
 
-            Console.WriteLine(o2.FindMedianSortedArrays(arr1, arr2));
-            Console.WriteLine(o2.FindMedianSortedArrays2(arr1, arr2));
+            //Console.WriteLine(o2.FindMedianSortedArrays(arr1, arr2));
+            //Console.WriteLine(o2.FindMedianSortedArrays2(arr1, arr2));
 
             //foreach ( int i in arr3 )
             //{
             //    Console.Write(i + " ");
             //}
+
+            //_424_Longest_Repeating_Character_Replacement o = new _424_Longest_Repeating_Character_Replacement();
+
+            //string s = "ABAB";
+            //int k = 2;
+            //Console.WriteLine(o.CharacterReplacement(s,k));
+
+            //for(char i = 'A'; i <= 'z'; i++)
+            //{
+            //    if(i > 90 && i < 97 )
+            //    {
+            //        continue;
+            //    }
+            //    Console.Write(i);
+            //}
+
+
+            //var permutations = StringPermutations.GetAllPermutations("wahid");
+            //Console.WriteLine(permutations.Count);
+            ////foreach (var perm in permutations)
+            ////{
+            ////    Console.WriteLine(perm);
+            ////}
+            //Console.WriteLine(permutations.Count);
+
+            //Anagram o = new Anagram();
+            //Console.WriteLine(o.isAnagram("wiu ahiid ","iiw ahid u"));
+
+
+            //int[] a = { 1, 2 };
+            //int[] b = { 1, 2 };
+            //Console.WriteLine(a == b);
+
+            (int, int, int, string) triplet = (108, 2, 3, "Wahid");
+            Console.WriteLine(triplet.Item1);
+            triplet.Item1 = 800;
+            Console.WriteLine(triplet.Item1);
+            Console.WriteLine(triplet.Item3);
+            Console.WriteLine(triplet.Item4);
         }
         public static void print(int[] arr)
         {
