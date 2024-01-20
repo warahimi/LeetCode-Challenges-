@@ -146,12 +146,20 @@ namespace LeetCodeChallenges
             //int[] b = { 1, 2 };
             //Console.WriteLine(a == b);
 
-            (int, int, int, string) triplet = (108, 2, 3, "Wahid");
-            Console.WriteLine(triplet.Item1);
-            triplet.Item1 = 800;
-            Console.WriteLine(triplet.Item1);
-            Console.WriteLine(triplet.Item3);
-            Console.WriteLine(triplet.Item4);
+            //(int, int, int, string) triplet = (108, 2, 3, "Wahid");
+            //Console.WriteLine(triplet.Item1);
+            //triplet.Item1 = 800;
+            //Console.WriteLine(triplet.Item1);
+            //Console.WriteLine(triplet.Item3);
+            //Console.WriteLine(triplet.Item4);
+
+            Dictionary<char, int> d = new();
+            d['c'] = 30;
+            d.Add('d', 4);
+            foreach(var kvp in d)
+            {
+                Console.WriteLine(kvp.Key + ":" + kvp.Value);
+            }
         }
         public static void print(int[] arr)
         {

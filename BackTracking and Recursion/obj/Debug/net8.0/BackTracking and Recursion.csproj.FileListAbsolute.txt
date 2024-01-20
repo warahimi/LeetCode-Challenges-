@@ -1,0 +1,15 @@
+E:\LeetCode Challenges GitHub Repo\LeetCodeChallenges\BackTracking and Recursion\bin\Debug\net8.0\BackTracking and Recursion.exe
+E:\LeetCode Challenges GitHub Repo\LeetCodeChallenges\BackTracking and Recursion\bin\Debug\net8.0\BackTracking and Recursion.deps.json
+E:\LeetCode Challenges GitHub Repo\LeetCodeChallenges\BackTracking and Recursion\bin\Debug\net8.0\BackTracking and Recursion.runtimeconfig.json
+E:\LeetCode Challenges GitHub Repo\LeetCodeChallenges\BackTracking and Recursion\bin\Debug\net8.0\BackTracking and Recursion.dll
+E:\LeetCode Challenges GitHub Repo\LeetCodeChallenges\BackTracking and Recursion\bin\Debug\net8.0\BackTracking and Recursion.pdb
+E:\LeetCode Challenges GitHub Repo\LeetCodeChallenges\BackTracking and Recursion\obj\Debug\net8.0\BackTracking and Recursion.GeneratedMSBuildEditorConfig.editorconfig
+E:\LeetCode Challenges GitHub Repo\LeetCodeChallenges\BackTracking and Recursion\obj\Debug\net8.0\BackTracking and Recursion.AssemblyInfoInputs.cache
+E:\LeetCode Challenges GitHub Repo\LeetCodeChallenges\BackTracking and Recursion\obj\Debug\net8.0\BackTracking and Recursion.AssemblyInfo.cs
+E:\LeetCode Challenges GitHub Repo\LeetCodeChallenges\BackTracking and Recursion\obj\Debug\net8.0\BackTracking and Recursion.csproj.CoreCompileInputs.cache
+E:\LeetCode Challenges GitHub Repo\LeetCodeChallenges\BackTracking and Recursion\obj\Debug\net8.0\BackTracking and Recursion.sourcelink.json
+E:\LeetCode Challenges GitHub Repo\LeetCodeChallenges\BackTracking and Recursion\obj\Debug\net8.0\BackTracking and Recursion.dll
+E:\LeetCode Challenges GitHub Repo\LeetCodeChallenges\BackTracking and Recursion\obj\Debug\net8.0\refint\BackTracking and Recursion.dll
+E:\LeetCode Challenges GitHub Repo\LeetCodeChallenges\BackTracking and Recursion\obj\Debug\net8.0\BackTracking and Recursion.pdb
+E:\LeetCode Challenges GitHub Repo\LeetCodeChallenges\BackTracking and Recursion\obj\Debug\net8.0\BackTracking and Recursion.genruntimeconfig.cache
+E:\LeetCode Challenges GitHub Repo\LeetCodeChallenges\BackTracking and Recursion\obj\Debug\net8.0\ref\BackTracking and Recursion.dll

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "BackTracking and Recursion/1.0.0": {
+        "runtime": {
+          "BackTracking and Recursion.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BackTracking and Recursion/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

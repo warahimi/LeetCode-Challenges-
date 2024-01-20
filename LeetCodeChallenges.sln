@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GreedyAlgorithmProblems", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DynamicProgramming", "DynamicProgrammin\DynamicProgramming.csproj", "{12ABE944-32A3-4786-9B6B-909630773FDC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SlidingWindow", "SlidingWindow\SlidingWindow.csproj", "{A1EA9384-921F-4E9E-8907-3E753731B9FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SlidingWindow", "SlidingWindow\SlidingWindow.csproj", "{A1EA9384-921F-4E9E-8907-3E753731B9FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackTracking and Recursion", "BackTracking and Recursion\BackTracking and Recursion.csproj", "{57CA74EB-F0E7-49AA-A5B3-7D2040251952}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{A1EA9384-921F-4E9E-8907-3E753731B9FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1EA9384-921F-4E9E-8907-3E753731B9FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1EA9384-921F-4E9E-8907-3E753731B9FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57CA74EB-F0E7-49AA-A5B3-7D2040251952}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57CA74EB-F0E7-49AA-A5B3-7D2040251952}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57CA74EB-F0E7-49AA-A5B3-7D2040251952}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57CA74EB-F0E7-49AA-A5B3-7D2040251952}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
