@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -249,5 +250,165 @@ So, passing 0 as the initial value for rev allows you to build and accumulate th
             int r = n % 10;
             return r * Convert.ToInt32(Math.Pow(10, numberOfDigitsInN-1)) + helper(n/10, numberOfDigitsInN-1);
         }
+
+
+
+        /*
+         * A palindrome number is a number that remains the same when its digits are reversed. 
+         * For example, 121 is a palindrome, but 123 is not.
+         */
+        // Function to check if a number is a palindrome
+        public bool IsPalindrome(int number)
+        {
+            // If the number is negative, it's not a palindrome
+            if (number < 0) return false;
+
+            // Convert the number to a string
+            string numStr = number.ToString();
+
+            // Initialize pointers for the start and end of the string
+            int start = 0;
+            int end = numStr.Length - 1;
+
+            // Loop through the string
+            while (start < end)
+            {
+                // If characters at start and end are not the same, it's not a palindrome
+                if (numStr[start] != numStr[end])
+                {
+                    return false;
+                }
+
+                // Move the pointers closer to the center
+                start++;
+                end--;
+            }
+
+            // If the loop completes without returning false, it's a palindrome
+            return true;
+        }
+        public bool IsPalindrome2(int number)
+        {
+            return number == Reverse(number);
+        }
+
+        // Recursive function to check if a number is a palindrome
+        public bool IsPalindrome3Rec(int number)
+        {
+            // Convert the number to a string to work with individual digits
+            string numStr = number.ToString();
+            return IsPalindromeRecursive(numStr, 0, numStr.Length - 1);
+        }
+
+        // Helper function for recursive palindrome check
+        static bool IsPalindromeRecursive(string numStr, int start, int end)
+        {
+            // Base case: if start crosses end, or they are the same, it's a palindrome
+            if (start >= end)
+            {
+                return true;
+            }
+
+            // Check if the current characters are different
+            if (numStr[start] != numStr[end])
+            {
+                return false;
+            }
+
+            // Recursive call by moving the pointers towards the middle
+            return IsPalindromeRecursive(numStr, start + 1, end - 1);
+        }
+
+
+        /*
+         * Count number of zeros in agiven number
+         */
+        public int countZeros(int number)
+        {
+            int count = 0;
+
+            // Handling the case where the number is 0
+            if (number == 0)
+            {
+                return 1;
+            }
+
+            // Handling negative numbers by taking their absolute value
+            number = Math.Abs(number);
+
+            while (number > 0)
+            {
+                if (number % 10 == 0)  // Check if the last digit is zero
+                {
+                    count++;
+                }
+                number /= 10;  // Remove the last digit
+            }
+
+            return count;
+        }
+        public int countZeros2(int number)
+        {
+            int count = 0;
+            string strNum = number.ToString();
+            foreach(char c in strNum)
+            {
+                if (c == '0')
+                    count++;
+            }
+            return count;
+        }
+        // recursive solution for counting number of 0s
+        public int countZeros3(int number)
+        {
+            // Handle the case of the number being 0 at the beginning
+            if (number == 0)
+            {
+                return 1;
+            }
+
+            // If the number is negative, work with its absolute value
+            number = Math.Abs(number);
+
+            // Start the recursive count
+            return CountZerosRecursive(number);
+        }
+
+        private int CountZerosRecursive(int number)
+        {
+            // Base case: when the number is reduced to 0
+            if (number == 0)
+            {
+                return 0;
+            }
+
+            // Check if the current last digit is zero, and add 1 to the count if it is
+            int count = (number % 10 == 0) ? 1 : 0;
+
+            // Recursive call, removing the last digit
+            return count + CountZerosRecursive(number / 10);
+        }
+
+        public int countZeros4(int number)
+        {
+            return helperCount(number, 0);
+        }
+        private int helperCount(int number, int count)
+        {
+            if(number == 0)
+            {
+                // after the last function call, the same count value will be returned to previous functions calls 
+                return count; // count is returned once, after the base cases is done it passes down the count to where it was called .... 
+            }
+            int r = number % 10;
+            if(r == 0)
+            {
+                return helperCount(number / 10, count+1); // increment the count and reduce the number
+            }
+            // esle do not increment count just reduce thenumber 
+            return helperCount(number / 10, count);
+        }
+
+        
     }
 }

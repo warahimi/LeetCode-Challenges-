@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BackTracking and Recursion")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9aad329b51efe67a9a8ddd4fab34ab5896e8e81a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4b87ca50bc6c53592338a050efbe68b0cc092b2a")]
 [assembly: System.Reflection.AssemblyProductAttribute("BackTracking and Recursion")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BackTracking and Recursion")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
