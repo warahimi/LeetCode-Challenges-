@@ -52,5 +52,22 @@ Output: 1
             }
             return result;
         }
+
+        public int SingleNumber2(int[] nums)
+        {
+            List<int> list = new List<int>();
+            foreach (int i in nums)
+            {
+                if(list.Contains(i))
+                {
+                    list.Remove(i);
+                }
+                else
+                {
+                    list.Add(i);
+                }
+            }
+            return list[0];
+        }
     }
 }

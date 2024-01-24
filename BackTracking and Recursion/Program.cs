@@ -164,14 +164,55 @@ namespace BackTrackingAndRecursion
             //    PrintArray(i);
             //}
 
-            Remove_a_Sub_String_from_String o = new Remove_a_Sub_String_from_String();
-            Console.WriteLine(o.removeString("this is an apple. I eat apple all the time.", "game"));
-            Console.WriteLine(o.removeString2("this is an apple. I eat apple all the time.", "game"));
-            Console.WriteLine(o.RemoveSubstring("this is an apple. I eat apple all the time.", "game"));
-            Console.WriteLine(o.RemoveSubstring2("this is an apple. I eat apple all the time.", "game"));
+            //Remove_a_Sub_String_from_String o = new Remove_a_Sub_String_from_String();
+            //Console.WriteLine(o.removeString("this is an apple. I eat apple all the time.", "game"));
+            //Console.WriteLine(o.removeString2("this is an apple. I eat apple all the time.", "game"));
+            //Console.WriteLine(o.RemoveSubstring("this is an apple. I eat apple all the time.", "game"));
+            //Console.WriteLine(o.RemoveSubstring2("this is an apple. I eat apple all the time.", "game"));
+
+
+            //Recursion_Dice_Throw_and_Letter_combination_of_phone_number o = new Recursion_Dice_Throw_and_Letter_combination_of_phone_number();
+            //o.dice(4); 
+            //foreach(var i in o.dice2(4))
+            //{
+            //    printList(i);
+            //}
+
+            //foreach(var i in o.diceList(4))
+            //{
+            //    Console.Write(i +" ");
+            //}
+
+            Backtracking_Maze_Problem o = new Backtracking_Maze_Problem();
+
+            int m = 3, n = 3;
+            //Console.WriteLine(o.countPaths(m,n));
+            //Console.WriteLine(o.countPaths2(m,n));
+            //Console.WriteLine(o.countPaths3(m,n));
+            //o.PrintPath(3, 3);
+            //Console.WriteLine();
+            //foreach (string s in o.PrintPath2(3,3))
+            //    Console.WriteLine(s);
+            //Console.WriteLine();
+            //foreach (string s in o.PrintPath3(3, 3))
+            //    Console.WriteLine(s);
+
+            Console.WriteLine(o.CountPathsDiagonally(m,n));
+            foreach(string s in o.PrintPathDiagonally(m,n))
+            {
+                Console.WriteLine(s);
+            }
+
 
         }
-
+        private static void printList(List<int> list)
+        {
+            foreach (int i in list)
+            {
+                Console.Write(i + " ");
+            }
+            Console.WriteLine();
+        }
         public static void PrintArray(int[] array)
         {
             foreach (int element in array)

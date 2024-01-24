@@ -5,6 +5,14 @@ using System.Security.AccessControl;
 using System.Text;
 using System.Threading.Tasks;
 
+/*
+ in subset problem we take some element and remove some element 
+
+We can apply the subset problme this pattern in taking some elements and removing some elements is know as sub set pattern
+for each element we have 2 choices either take it or ignore it 
+
+we can use the processed and unprocessed approach, process is initially empyt and unprocess is the given string 
+ */
 namespace BackTracking_and_Recursion
 {
     internal class Recursion_Subset_Subsequence_String_Questions
