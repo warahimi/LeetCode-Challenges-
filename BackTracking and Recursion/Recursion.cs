@@ -127,6 +127,15 @@ namespace BackTracking_and_Recursion
             return n % 10 + sumOfDegitsRec(n/10);
         }
 
+        // print a word n times using recursion 
+        public static void printNTmes(int n, string word = "default")
+        {
+            if(n == 0)
+                return;
+            Console.WriteLine(word);
+            printNTmes(n-1, word);
+        }
+
         // Concept --n VS n--
         public void func(int n) // infinite recursion 
         {

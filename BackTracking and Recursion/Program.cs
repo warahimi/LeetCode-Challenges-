@@ -183,9 +183,9 @@ namespace BackTrackingAndRecursion
             //    Console.Write(i +" ");
             //}
 
-            Backtracking_Maze_Problem o = new Backtracking_Maze_Problem();
+            //Backtracking_Maze_Problem o = new Backtracking_Maze_Problem();
 
-            int m = 3, n = 3;
+            //int m = 3, n = 3;
             //Console.WriteLine(o.countPaths(m,n));
             //Console.WriteLine(o.countPaths2(m,n));
             //Console.WriteLine(o.countPaths3(m,n));
@@ -197,12 +197,106 @@ namespace BackTrackingAndRecursion
             //foreach (string s in o.PrintPath3(3, 3))
             //    Console.WriteLine(s);
 
-            Console.WriteLine(o.CountPathsDiagonally(m,n));
-            foreach(string s in o.PrintPathDiagonally(m,n))
+            //Console.WriteLine(o.CountPathsDiagonally(m,n));
+            //foreach(string s in o.PrintPathDiagonally(m,n))
+            //{
+            //    Console.WriteLine(s);
+            //}
+
+            //bool[,] maze =
+            //{
+            //    {true, true, true },
+            //    {true, true, true },
+            //    {true, true, true }
+            //};
+            //int[,] mazeInt = {
+            //    { 1, 1, 1 },
+            //    { 1, 1, 1 },
+            //    { 1, 1, 1 }
+            // };
+
+
+            //o.PrintPathRestrictions(maze);
+            //Console.WriteLine();
+            //Console.WriteLine("All Directions");
+            //o.PrintPathRestrictionsAllDirection(maze);
+            //Console.WriteLine(o.CountPathsAllDirections2(maze,0,0));
+            //Console.WriteLine(o.StartTraversal(maze));
+            //Console.WriteLine(o.StartTraversal(mazeInt));
+
+            //Backtracking_N_Queens o = new Backtracking_N_Queens();
+            //int n = 5;
+            //bool[,] board = new bool[n,n];
+            //Console.WriteLine("Number of ways: " + o.NQueens(board));
+
+            //Recursion.printNTmes(5, "Wahid");
+
+            //Backtracking2 o = new Backtracking2();
+            //int n = 5;
+            //o.print(n);
+            //Console.WriteLine();
+            //o.print1toN(n);
+            //Console.WriteLine();
+            //o.printNto1(n);
+            //Console.WriteLine();
+            //o.print1toN2(n);
+            //Console.WriteLine();
+            //o.printNto1_2(n);
+
+            //int n = 5;
+            //Recursion2 o = new Recursion2();
+            //Console.WriteLine(o.sum(n));
+            //o.sum2(n);
+            //int[] arr = {1,2,3, 4,5};
+            //o.reverseArr(arr);
+            //foreach (int i in arr) Console.Write(i + " ");
+            //Console.WriteLine();
+            //Console.WriteLine(o.isPalendrom("mmalayalamm"));
+            //Console.WriteLine(o.isPalendrom2("mmalayalamm"));
+
+
+            //Recursion_Multiple_Recursion_Calls o = new Recursion_Multiple_Recursion_Calls();
+            //Console.WriteLine(o.fib(3));
+
+            Recursion3_Subsequence o = new Recursion3_Subsequence();
+            int[] arr = { 3,1,2 ,4,5,6};
+
+            //Displaying all subsequences
+            //foreach (var subsequence in o.GetSubsequence(arr))
+            //{
+            //    Console.WriteLine("[" + string.Join(", ", subsequence) + "]");
+            //}
+            //Console.WriteLine();
+            //foreach (var subsequence in o.GetSubsequenceRev(arr))
+            //{
+            //    Console.WriteLine("[" + string.Join(", ", subsequence) + "]");
+            //}
+
+            foreach (var subsequence in o.GetSubSequenceSumK(arr, 6))
             {
-                Console.WriteLine(s);
+                Console.WriteLine("[" + string.Join(", ", subsequence) + "]");
+            }
+            Console.WriteLine();
+            foreach (var subsequence in o.GetSubSequenceSumK2(arr, 6))
+            {
+                Console.WriteLine("[" + string.Join(", ", subsequence) + "]");
             }
 
+            Console.WriteLine();
+            foreach (var subsequence in o.GetSubSequenceSumK3(arr, 6))
+            {
+                Console.WriteLine("[" + string.Join(", ", subsequence) + "]");
+            }
+
+            Console.WriteLine();
+            foreach (var subsequence in o.GetSubSequenceSumK5(arr, 6))
+            {
+                Console.WriteLine("[" + string.Join(", ", subsequence) + "]");
+            }
+            Console.WriteLine();
+            Console.WriteLine(o.GetSubSequenceSumK6(arr,6));
+            Console.WriteLine(o.GetSubSequenceSumK7(arr,6));
+            Console.WriteLine(o.GetSubSequenceSumK8(arr,6));
 
         }
         private static void printList(List<int> list)
@@ -222,4 +316,6 @@ namespace BackTrackingAndRecursion
             Console.WriteLine();
         }
     }
+
+    
 }
