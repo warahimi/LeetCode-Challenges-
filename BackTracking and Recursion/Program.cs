@@ -258,8 +258,8 @@ namespace BackTrackingAndRecursion
             //Recursion_Multiple_Recursion_Calls o = new Recursion_Multiple_Recursion_Calls();
             //Console.WriteLine(o.fib(3));
 
-            Recursion3_Subsequence o = new Recursion3_Subsequence();
-            int[] arr = { 3,1,2 ,4,5,6};
+            //Recursion3_Subsequence o = new Recursion3_Subsequence();
+            //int[] arr = { 3,1,2 ,4,5,6};
 
             //Displaying all subsequences
             //foreach (var subsequence in o.GetSubsequence(arr))
@@ -272,31 +272,37 @@ namespace BackTrackingAndRecursion
             //    Console.WriteLine("[" + string.Join(", ", subsequence) + "]");
             //}
 
-            foreach (var subsequence in o.GetSubSequenceSumK(arr, 6))
-            {
-                Console.WriteLine("[" + string.Join(", ", subsequence) + "]");
-            }
-            Console.WriteLine();
-            foreach (var subsequence in o.GetSubSequenceSumK2(arr, 6))
-            {
-                Console.WriteLine("[" + string.Join(", ", subsequence) + "]");
-            }
+            //foreach (var subsequence in o.GetSubSequenceSumK(arr, 6))
+            //{
+            //    Console.WriteLine("[" + string.Join(", ", subsequence) + "]");
+            //}
+            //Console.WriteLine();
+            //foreach (var subsequence in o.GetSubSequenceSumK2(arr, 6))
+            //{
+            //    Console.WriteLine("[" + string.Join(", ", subsequence) + "]");
+            //}
 
-            Console.WriteLine();
-            foreach (var subsequence in o.GetSubSequenceSumK3(arr, 6))
-            {
-                Console.WriteLine("[" + string.Join(", ", subsequence) + "]");
-            }
+            //Console.WriteLine();
+            //foreach (var subsequence in o.GetSubSequenceSumK3(arr, 6))
+            //{
+            //    Console.WriteLine("[" + string.Join(", ", subsequence) + "]");
+            //}
 
-            Console.WriteLine();
-            foreach (var subsequence in o.GetSubSequenceSumK5(arr, 6))
-            {
-                Console.WriteLine("[" + string.Join(", ", subsequence) + "]");
-            }
-            Console.WriteLine();
-            Console.WriteLine(o.GetSubSequenceSumK6(arr,6));
-            Console.WriteLine(o.GetSubSequenceSumK7(arr,6));
-            Console.WriteLine(o.GetSubSequenceSumK8(arr,6));
+            //Console.WriteLine();
+            //foreach (var subsequence in o.GetSubSequenceSumK5(arr, 6))
+            //{
+            //    Console.WriteLine("[" + string.Join(", ", subsequence) + "]");
+            //}
+            //Console.WriteLine();
+            //Console.WriteLine(o.GetSubSequenceSumK6(arr,6));
+            //Console.WriteLine(o.GetSubSequenceSumK7(arr,6));
+            //Console.WriteLine(o.GetSubSequenceSumK8(arr,6));
+
+            Merge_Sort_Using_Recursion o = new Merge_Sort_Using_Recursion();
+            int[] arr = { 10, 1, 2, 22, 3, 56, 0 };
+            //o.MergeSort(arr);
+            o.MergeSort2(arr);
+            PrintArray(arr);
 
         }
         private static void printList(List<int> list)
