@@ -153,13 +153,21 @@ namespace LeetCodeChallenges
             //Console.WriteLine(triplet.Item3);
             //Console.WriteLine(triplet.Item4);
 
-            Dictionary<char, int> d = new();
-            d['c'] = 30;
-            d.Add('d', 4);
-            foreach(var kvp in d)
-            {
-                Console.WriteLine(kvp.Key + ":" + kvp.Value);
-            }
+            //Dictionary<char, int> d = new();
+            //d['c'] = 30;
+            //d.Add('d', 4);
+            //foreach(var kvp in d)
+            //{
+            //    Console.WriteLine(kvp.Key + ":" + kvp.Value);
+            //}
+
+            _13_Roman_to_Integer o = new _13_Roman_to_Integer();
+            
+            Console.WriteLine(o.RomanToInt("LVIII"));
+            Console.WriteLine(o.RomanToInt2("LVIII"));
+            Console.WriteLine(o.IntToRoman(58));
+            Console.WriteLine(o.IntToRoman2(58));
+            Console.WriteLine(o.ToRoman(58));
         }
         public static void print(int[] arr)
         {

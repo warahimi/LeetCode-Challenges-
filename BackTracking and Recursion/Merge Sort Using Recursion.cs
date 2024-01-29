@@ -5,7 +5,15 @@ using System.Text;
 using System.Threading.Tasks;
 
 /*
-1 - Divide 
+-selection sort
+-buble sort
+- insertiosn sort
+all these algorithms have O(n^2) time 
+
+Merge SOrt has O(n logn) and nearly O(n) space 
+ * 
+ * 
+1 - Divide : divid the problem into sub problems
 2 - merge 
 Merge sort is a divide-and-conquer algorithm that divides a list into equal halves until it has partitioned the entire array 
 into segments containing a single element. Then it repeatedly merges these segments in a manner that results in a sorted list.
@@ -109,11 +117,13 @@ namespace BackTracking_and_Recursion
             MergeSort2(arr, mid+1, right);
             Merge2(arr,left, mid, right);
         }
-        private void Merge2(int[] arr, int low, int mid , int high)
+        // basicall it merges the two hypotytical array [left...mid] and in [mid+1....right] into 3rd array 
+        private void Merge2(int[] arr, int low, int mid , int high) // (n Longn)  , space O(n) becase of temp 
         {
             List<int> temp = new List<int>();
-            int left = low;
-            int right = mid+1;
+            int left = low; // starting index for left sub array 
+            int right = mid+1; // starting index for the right sub arrau
+            // all the elements of arr are present in [left...mid] and in [mid+1....right]
 
             // filling the arr
             while (left <= mid && right <= high) // till we have elements in the left sub array and the right sub array 
@@ -149,6 +159,107 @@ namespace BackTracking_and_Recursion
             {
                 arr[i] = temp[i - low];
             }
+        }
+
+        public void MergeSort3(int[] arr)
+        {
+            MergeSort3(arr, 0, arr.Length - 1);
+        }
+        private void MergeSort3(int[] arr, int low, int high)
+        {
+            if(low >= high)
+            {
+                return;
+            }
+            int mid = (low + high) / 2;
+            MergeSort3(arr, low, mid);
+            MergeSort3(arr, mid + 1, high);
+            Merge3(arr, low, mid, high);
+        }
+        private void Merge3(int[] arr, int low, int mid, int high)
+        {
+            List<int> temp = new List<int>();
+            int left = low;
+            int right = mid+1;
+            while(left <= mid && right <= high)
+            {
+                if (arr[left] < arr[right])
+                {
+                    temp.Add(arr[left]);
+                    left++;
+                }
+                else
+                {
+                    temp.Add(arr[right]);
+                    right++;
+                }
+            }
+
+            while(left <= mid)
+            {
+                temp.Add(arr[left]);
+                left++;
+            }
+            while(right <= high)
+            {
+                temp.Add(arr[right] );
+                right++;
+            }
+            for(int i = low; i <= high; i++)
+            {
+                arr[i] = temp[i - low];
+            }
+        }
+
+
+        public void MergeSort4(int[] arr)
+        {
+            MergeSort4(arr, arr.Length);
+        }
+
+        // Recursive function to sort an array of integers.
+        private void MergeSort4(int[] arr, int n)
+        {
+            int mid, i;
+            if (n < 2) return; // base condition. If the array has less than two element, do nothing.
+
+            mid = n / 2;  // find the mid index.
+
+            // create left and right subarrays
+            int[] leftSubArr = new int[mid];
+            int[] rightSubArr = new int[n - mid];
+
+            for (i = 0; i < mid; i++) 
+                leftSubArr[i] = arr[i]; // creating left subarray
+            for (i = mid; i < n; i++) 
+                rightSubArr[i - mid] = arr[i]; // creating right subarray
+
+            MergeSort4(leftSubArr, mid);  // sorting the left subarray
+            MergeSort4(rightSubArr, n - mid);  // sorting the right subarray
+            Merge4(arr, leftSubArr, mid, rightSubArr, n - mid);  // Merging L and R into A as sorted list.
+        }
+
+        // Function to Merge Arrays L and R into A.
+        // leftCount = number of elements in L
+        // rightCount = number of elements in R. 
+        private void Merge4(int[] arr, int[] leftSubArr, int leftCount, int[] rightSubArr, int rightCount)
+        {
+            int i, j, k;
+
+            // i - to mark the index of left subarray (leftSubArr)
+            // j - to mark the index of right sub-array (rightSubArr)
+            // k - to mark the index of merged subarray (arr)
+            i = 0; j = 0; k = 0; // k indicates the main array index
+
+            while (i < leftCount && j < rightCount)
+            {
+                if (leftSubArr[i] < rightSubArr[j]) arr[k++] = leftSubArr[i++];
+                else arr[k++] = rightSubArr[j++];
+            }
+            while (i < leftCount) 
+                arr[k++] = leftSubArr[i++];
+            while (j < rightCount) 
+                arr[k++] = rightSubArr[j++];
         }
     }
 }

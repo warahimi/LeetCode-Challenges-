@@ -298,12 +298,41 @@ namespace BackTrackingAndRecursion
             //Console.WriteLine(o.GetSubSequenceSumK7(arr,6));
             //Console.WriteLine(o.GetSubSequenceSumK8(arr,6));
 
-            Merge_Sort_Using_Recursion o = new Merge_Sort_Using_Recursion();
-            int[] arr = { 10, 1, 2, 22, 3, 56, 0 };
+            //Merge_Sort_Using_Recursion o = new Merge_Sort_Using_Recursion();
+            //int[] arr = { 10, 1, 2, 22, 3, 56, 0 };
             //o.MergeSort(arr);
-            o.MergeSort2(arr);
-            PrintArray(arr);
+            //o.MergeSort2(arr);
+            //o.MergeSort3(arr);
+            //o.MergeSort4(arr);
 
+            //QuickSort_Using_Recursion o = new QuickSort_Using_Recursion();
+            //o.QuickSort(arr);
+            //PrintArray(arr);
+
+            //_39_Combination_Sum_Reursion_and_BackTracking o = new _39_Combination_Sum_Reursion_and_BackTracking();
+            //int[] arr = { 2, 3, 5 };
+            //foreach( var list in o.CombinationSum3(arr, 8))
+            //{
+            //    printList(list);
+            //}
+
+
+            //_40_Combination_Sum_II o = new _40_Combination_Sum_II();
+            //int[] arr = { 10, 1, 2, 7, 6, 1, 5 };
+            //foreach (List<int> list in o.CombinationSum2(arr, 8))
+            //{
+            //    printList(list);
+            //}
+
+
+            //Subset_Sums o = new Subset_Sums();
+            //List<int> arr = new List<int>() { 3,1,2};
+            //printList(o.subsetSums(arr, arr.Count));
+            //printList(o.subsetSums2(arr, arr.Count));
+            //printList(o.subsetSumsA(arr));
+
+
+            
         }
         private static void printList(List<int> list)
         {
