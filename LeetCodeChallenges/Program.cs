@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Security.Cryptography.X509Certificates;
 
 namespace LeetCodeChallenges
 {
@@ -162,16 +163,65 @@ namespace LeetCodeChallenges
             //}
 
             _13_Roman_to_Integer o = new _13_Roman_to_Integer();
-            
-            Console.WriteLine(o.RomanToInt("LVIII"));
-            Console.WriteLine(o.RomanToInt2("LVIII"));
-            Console.WriteLine(o.IntToRoman(58));
-            Console.WriteLine(o.IntToRoman2(58));
-            Console.WriteLine(o.ToRoman(58));
+
+            //Console.WriteLine(o.RomanToInt("LVIII"));
+            //Console.WriteLine(o.RomanToInt2("LVIII"));
+            //Console.WriteLine(o.IntToRoman(58));
+            //Console.WriteLine(o.IntToRoman2(58));
+            //Console.WriteLine(o.ToRoman(58));
+
+            //string s = "Wahid";
+            //int n = 6;
+            //Console.WriteLine(s.Substring(2));
+            //s = s.PadLeft(s.Length + n, '_');
+            //Console.WriteLine(s.PadRight(s.Length+ n,'_'));
+            //s = 'R' + s; // prepend a char to a string
+            //Console.WriteLine(s);
+            //s = 'A' + s;
+            //Console.WriteLine(s);
+            //while (true) // rotating a string
+            //{
+            //    Console.ReadLine();
+            //    string left = s.Substring(0, 1);
+            //    string right = s.Substring(1);
+            //    s = right + left;
+            //    Console.WriteLine(s);
+            //}
+
+            //Console.WriteLine(RotateString.RotateRight("Wahid",2));
+            //string s = "Wahid";
+            //Console.WriteLine("abcde".Contains("acd"));
+
+
+
+            string s = "Wahidullah Rahimi jan abdullah jan rahimi hosna jan rahimi";
+            Dictionary<char, List<int>> charIndices = new Dictionary<char, List<int>>();
+            for(int i = 0; i < s.Length; i++) 
+            {
+                if (!charIndices.ContainsKey(s[i]))
+                {
+                    charIndices.Add(s[i], new List<int>());
+                }
+                charIndices[s[i]].Add(i);
+            }
+            foreach(var kvp in charIndices)
+            {
+                Console.Write(kvp.Key + ": ");
+                printList(kvp.Value);
+            }
+
         }
         public static void print(int[] arr)
         {
             foreach (int i in arr)
+            {
+                Console.Write(i + " ");
+            }
+            Console.WriteLine();
+        }
+        private static void printList(List<int> list)
+        {
+            foreach (int i in list)
             {
                 Console.Write(i + " ");
             }
